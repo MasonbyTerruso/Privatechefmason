@@ -1,339 +1,236 @@
 
-/* ==========================================================================
-   MAT — MASON BY ALESSIO TERRUSO | QUIET LUXURY STYLESHEET
-   ========================================================================== */
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAT — Mason by Alessio Terruso | Private & Performance Chef</title>
 
-/* 1. VARIABLES & RESET */
-:root {
-  --bg-main: #0a0a0c;
-  --bg-card: #121216;
-  --bg-card-hover: #181820;
-  --text-primary: #f4f4f6;
-  --text-secondary: #a0a0ab;
-  --accent-gold: #c5a059;
-  --accent-gold-hover: #d4af37;
-  --border-color: rgba(197, 160, 89, 0.2);
-  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --max-width: 1100px;
-}
+  <!-- Open Graph / Meta Tag Anteprima WhatsApp e Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://masonbyterruso.github.io/Privatechefmason/">
+  <meta property="og:title" content="MAT — Mason by Alessio Terruso | Private & Performance Chef">
+  <meta property="og:description" content="Servizi culinari su misura per cene private d'élite, gestione lifestyle ed elevata nutrizione per atleti professionisti.">
+  <meta property="og:image" content="https://masonbyterruso.github.io/Privatechefmason/favicon.png">
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MAT — Mason by Alessio Terruso | Private & Performance Chef">
+  <meta name="twitter:description" content="Servizi culinari su misura per cene private d'élite, gestione lifestyle ed elevata nutrizione per atleti professionisti.">
+  <meta name="twitter:image" content="https://masonbyterruso.github.io/Privatechefmason/favicon.png">
 
-html {
-  scroll-behavior: smooth;
-  font-family: var(--font-family);
-  background-color: var(--bg-main);
-  color: var(--text-primary);
-  line-height: 1.6;
-}
+  <!-- Favicon e Foglio di Stile -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css?v=2.0">
+</head>
+<body>
 
-body {
-  overflow-x: hidden;
-  background-color: var(--bg-main);
-}
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+      <div class="logo">MAT — ALESSIO TERRUSO</div>
+      <ul class="nav-links">
+        <li><a href="#about">Chi Sono</a></li>
+        <li><a href="#services">Servizi</a></li>
+        <li><a href="#performance">Performance Nutrition</a></li>
+        <li><a href="#gallery">Portfolio</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contatti</a></li>
+        <li><a href="en.html" class="lang-switch">EN</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* 2. HEADER & NAVIGATION */
-header {
-  background-color: var(--bg-main);
-  border-bottom: 1px solid var(--border-color);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 20px 0;
-}
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-container">
+      <span class="subtitle">PRIVATE CHEF & PERFORMANCE SPECIALIST</span>
+      <h1>Bespoke Culinary & High-Performance Services</h1>
+      <p>Cucina sartoriale e nutrizione personalizzata ad alte prestazioni per atleti professionisti, VIP e clienti esclusivi.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Richiedi Consultazione</a>
+        <a href="#services" class="btn btn-secondary">Scopri i Servizi</a>
+      </div>
+    </div>
+  </section>
 
-nav {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="container">
+      <span class="section-tag">FILOSOFIA & VISIONE</span>
+      <h2>L'Eccellenza Culinaria Incontra la Performance</h2>
+      <p class="lead">Unisco la tradizione della grande cucina italiana e internazionale con una rigorosa metodologia nutrizionale orientata alle alte prestazioni e al benessere psicofisico.</p>
+      
+      <div class="about-description margin-top">
+        <p>Nato a Torino, 31 anni, ho maturato un percorso professionale unico lavorando in oltre 22 paesi nel mondo. La mia formazione si è consolidata all'interno di ristoranti stellati, dove ho appreso le più raffinate ed elevate tecniche culinarie, spinto da una profonda passione e da un amore autentico per la materia prima e il cibo.</p>
+        <p>La mia missione è trasformare ogni pasto in un'esperienza d'élite, dove il valore estetico e il profilo sensoriale del piatto dialogano in perfetta armonia con la qualità e le esigenze nutrizionali degli ospiti. Con oltre un decennio di esperienza al servizio di clienti privati, famiglie d'élite e atleti professionisti di livello internazionale, gestisco ogni incarico con cura maniacale e assoluta discrezione.</p>
+        <p>Che si tratti di sviluppare un piano nutrizionale personalizzato per la preparazione atletica o di curare un percorso degustazione per un'occasione speciale, il mio approccio rimane lo stesso: tailored-made, elegante e focalizzato sull'eccellenza incondizionata.</p>
+      </div>
 
-.logo {
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  color: var(--accent-gold);
-  font-size: 1.1rem;
-}
+      <div class="privacy-badge">
+        <span class="privacy-icon">🔒</span>
+        <p><strong>Garanzia di Massima Privacy & NDA:</strong> Ogni incarico è tutelato dal più rigido rispetto della riservatezza e da accordi di non divulgazione (NDA), garantendo un servizio invisibile, sicuro ed esclusivo in qualsiasi residenza o location nel mondo.</p>
+      </div>
+    </div>
+  </section>
 
-.nav-links {
-  display: flex !important;
-  flex-direction: row !important;
-  list-style: none !important;
-  gap: 28px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  align-items: center;
-}
+  <!-- SERVICES SECTION -->
+  <section id="services" class="section bg-card">
+    <div class="container">
+      <span class="section-tag">ESPERIENZE SARTORIALI</span>
+      <h2>Servizi Culinari su Misura</h2>
+      <p class="section-intro">Soluzioni gastronomiche flessibili e altamente personalizzate, ideate per soddisfare le esigenze di una clientela esigente sia a domicilio che in viaggio.</p>
+      
+      <div class="grid-2 margin-top">
+        <div class="card">
+          <h3>Cene Private & Intime di Coppia</h3>
+          <p>L'esperienza di un ristorante di fine dining direttamente nel comfort della tua residenza. Menù degustazione creati su misura per celebrare ricorrenze importanti o serate esclusive. Dalla selezione degli ingredienti all'allestimento della tavola, fino al servizio e al riordino finale, ogni dettaglio è gestito in modo impeccabile per regalare un ricordo sensoriale unico.</p>
+        </div>
+        <div class="card">
+          <h3>Eventi Privati & Group Dining</h3>
+          <p>Format gastronomici raffinati pensati per cene tra amici, ricorrenze familiari ed eventi aziendali riservati. Sviluppo menù dinamici, a buffet elegante o serviti al tavolo, garantendo fluidità organizzativa, materie prime di stagione d'eccellenza e la capacità di adattare ogni portata alle preferenze e restrizioni alimentari degli ospiti.</p>
+        </div>
+        <div class="card">
+          <h3>Menù Degustazione & Wine Pairing</h3>
+          <p>Un percorso sensoriale multi-portata focalizzato sul rispetto della materia prima e sulla valorizzazione dei sapori autentici. Ogni piatto viene abbinato in sinergia con etichette di vini pregiati, piccoli produttori artigianali o grandi annate selezionate, creando un'esperienza di degustazione immersiva ed equilibrata.</p>
+        </div>
+        <div class="card">
+          <h3>Lifestyle & Executive Chef Services</h3>
+          <p>Gestione culinaria completa e continuativa per residenze d'élite, villa rental estivi e clienti ad alto profilo. Il servizio include la spesa quotidiana da fornitori selezionati, la preparazione dei pasti giornalieri secondo specifiche preferenze nutrizionali e la massima flessibilità operativa per accompagnarti anche durante spostamenti e vacanze.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.nav-links li {
-  list-style: none !important;
-}
+  <!-- ATHLETES / PERFORMANCE SECTION -->
+  <section id="performance" class="section">
+    <div class="container">
+      <span class="section-tag">ATLETI PROFESSIONISTI</span>
+      <h2>High-Performance Culinary Management</h2>
+      <p class="section-intro">Supporto nutrizionale e culinario avanzato per atleti di alto livello, progettato per ottimizzare il recupero muscolare, l'energia in gara e le prestazioni complessive.</p>
 
-.nav-links a {
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+      <div class="grid-3 margin-top">
+        <div class="card">
+          <h4>Nutrizione per la Performance</h4>
+          <p>Piani alimentari scientificamente calibrati in base al carico di allenamento, alla fase della stagione (pre-season, match-day, recovery) e ai dati biometrici dell'atleta. Ingredienti ad alta densità nutritiva lavorati con tecniche di cottura che ne preservano le proprietà organolettiche e la digeribilità.</p>
+        </div>
+        <div class="card">
+          <h4>Sinergia Integrazione & Micronutrienti</h4>
+          <p>Integrazione perfetta tra cibo fresco e protocolli nutrizionali prescritti dal team medico o dai nutrizionisti dello sportivo. Massimizzazione dell'assorbimento di vitamine, minerali e antiossidanti naturali attraverso ricette bilanciate e mai monotone.</p>
+        </div>
+        <div class="card">
+          <h4>Supporto in Trasferta & Camp</h4>
+          <p>Gestione culinaria totale durante trasferte, ritiri di preparazione, tornei internazionali e viaggi di lavoro. Garantisco la continuità della dieta dell'atleta in qualsiasi contesto, eliminando ogni stress logistico e mantenendo standard qualitativi elevati.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.nav-links a:hover {
-  color: var(--accent-gold);
-}
+  <!-- TESTIMONIALS & NDA SECTION -->
+  <section id="testimonials" class="section bg-card">
+    <div class="container">
+      <span class="section-tag">DICONO DI ME</span>
+      <h2>Riferimenti & Riservatezza</h2>
+      <p class="section-intro">La fiducia di atleti d'élite e clienti privati si fonda sulla costanza qualitativa e sul massimo rispetto della vita privata.</p>
+      
+      <div class="grid-2 margin-top">
+        <div class="card">
+          <p class="quote">"Professionalità e cura maniacale dei dettagli nutrizionali. Aver curato la mia alimentazione quotidiana e nei giorni di gara ha fatto la differenza nelle prestazioni sul campo."</p>
+          <div class="quote-author">
+            <strong>Calciatore Professionista</strong>
+            <span>Atleta di Livello Internazionale</span>
+          </div>
+        </div>
+        <div class="card">
+          <p class="quote">"Un'esperienza culinaria d'eccellenza direttamente nella nostra residenza. Gestione impeccabile dell'evento, discrezione totale e una qualità dei piatti da ristorante stellato."</p>
+          <div class="quote-author">
+            <strong>Family Office / Private Client</strong>
+            <span>Residenza Privata, Monaco</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-.lang-switch {
-  border: 1px solid var(--border-color);
-  padding: 4px 10px;
-  border-radius: 4px;
-  color: var(--accent-gold) !important;
-}
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <span class="section-tag">PORTFOLIO</span>
+      <h2>Estetica Culinaria & Materia Prima</h2>
+      <p class="section-intro">Una selezione visiva della mia filosofia culinaria: la purezza degli ingredienti freschi, l'armonia degli impiantamenti e la cura dei dettagli.</p>
+      
+      <div class="gallery-grid margin-top">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80" alt="High Performance Fine Dining">
+          <div class="gallery-caption">High-Performance Fine Dining</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Piatto Degustazione Sartoriale">
+          <div class="gallery-caption">Piatto Degustazione Sartoriale</div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80" alt="Ortaggi e Materie Prime Fresche">
+          <div class="gallery-caption">Ortaggi e Materie Prime Fresche</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-/* 3. HERO SECTION */
-.hero {
-  padding: 120px 24px 80px;
-  text-align: center;
-  max-width: 850px;
-  margin: 0 auto;
-}
+  <!-- FAQ SECTION -->
+  <section id="faq" class="section bg-card">
+    <div class="container">
+      <span class="section-tag">INFO PRATICHE</span>
+      <h2>Domande Frequenti & Operatività</h2>
+      <p class="section-intro">Tutto ciò che c'è da sapere prima di prenotare un servizio privato o una consulenza nutrizionale d'élite.</p>
+      
+      <div class="grid-2 margin-top">
+        <div class="card">
+          <h3>Dove operi e quali aree copri?</h3>
+          <p>Opero principalmente tra Torino, Milano, la Costa Azzurra e Monaco. Sono inoltre disponibile per trasferte nazionali e internazionali, villa/yacht private chef tenure ed eventi riservati worldwide.</p>
+        </div>
+        
+        <div class="card">
+          <h3>Con quanto anticipo occorre prenotare?</h3>
+          <p>Per cene private ed eventi riservati è consigliabile richiedere la disponibilità con 7-14 giorni di anticipo. Per i servizi di Performance Chef stagionali o per periodi continuativi con atleti, la pianificazione avviene con accordi dedicati.</p>
+        </div>
 
-.subtitle {
-  display: block;
-  font-size: 0.85rem;
-  letter-spacing: 0.2em;
-  color: var(--accent-gold);
-  text-transform: uppercase;
-  margin-bottom: 16px;
-}
+        <div class="card">
+          <h3>Come gestisci intolleranze, regimi speciali e privacy?</h3>
+          <p>Ogni menù o piano nutrizionale viene bilanciato su misura in base a requisiti medici, regimi atletici specifici, allergie o preferenze etiche. La massima riservatezza e la firma di NDA sono sempre garantite.</p>
+        </div>
 
-.hero h1 {
-  font-size: 2.8rem;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.15rem;
-  margin-bottom: 32px;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* 4. BUTTONS */
-.btn {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.btn-primary {
-  background-color: var(--accent-gold);
-  color: #0a0a0c;
-}
-
-.btn-primary:hover {
-  background-color: var(--accent-gold-hover);
-}
-
-.btn-secondary {
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
-}
-
-.btn-secondary:hover {
-  border-color: var(--accent-gold);
-  color: var(--accent-gold);
-}
-
-.btn-whatsapp {
-  background-color: #25d366;
-  color: #000;
-}
-
-/* 5. TYPOGRAPHY & SECTIONS */
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-.section {
-  padding: 90px 0;
-}
-
-.bg-card {
-  background-color: var(--bg-card);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.section-tag {
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  color: var(--accent-gold);
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-h2 {
-  font-size: 2.2rem;
-  margin-bottom: 12px;
-}
-
-.section-intro, .lead {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  max-width: 700px;
-}
-
-.margin-top {
-  margin-top: 40px;
-}
-
-/* 6. GRIDS & CARDS */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-
-.card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  padding: 32px;
-  border-radius: 8px;
-  transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent-gold);
-}
-
-.card h3, .card h4 {
-  color: var(--accent-gold);
-  margin-bottom: 12px;
-}
-
-/* PRIVACY BADGE */
-.privacy-badge {
-  margin-top: 40px;
-  padding: 20px;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  background-color: rgba(197, 160, 89, 0.05);
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-/* 7. GALLERY */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
-}
-
-.gallery-item {
-  position: relative;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid var(--border-color);
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  display: block;
-}
-
-.gallery-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 16px;
-  background: linear-gradient(transparent, rgba(10, 10, 12, 0.9));
-  color: var(--text-primary);
-  font-size: 0.9rem;
-}
-
-/* TESTIMONIALS */
-.quote {
-  font-style: italic;
-  margin-bottom: 16px;
-}
-
-.quote-author strong {
-  display: block;
-  color: var(--text-primary);
-}
-
-.quote-author span {
-  font-size: 0.8rem;
-  color: var(--accent-gold);
-}
-
-/* CONTACT & FOOTER */
-.contact-actions {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  margin-top: 32px;
-  flex-wrap: wrap;
-}
-
-footer {
-  padding: 40px 0;
-  border-top: 1px solid var(--border-color);
-  text-align: center;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-}
-
-/* 8. RESPONSIVE */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 16px;
-  }
+        <div class="card">
+          <h3>Cosa include il servizio Private Chef a domicilio?</h3>
+          <p>Il servizio include la ricerca e selezione di materie prime d'eccellenza, la preparazione espressa nella vostra cucina, il servizio al tavolo, il riordino e la pulizia completa della postazione di lavoro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
   
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px !important;
-  }
-  
-  .hero h1 {
-    font-size: 2rem;
-  }
-}
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section text-center">
+    <div class="container">
+      <span class="section-tag">CONTATTI</span>
+      <h2>Richiedi una Consultazione Riservata</h2>
+      <p>Disponibile per incarichi privati e collaborazioni sportive a Torino, Milano e su scala internazionale.</p>
+      
+      <div class="contact-actions">
+        <a href="https://wa.me/39351903238?text=Buongiorno%20Alessio,%20vorrei%20informazioni%20sui%20tuoi%20servizi%20di%20Private%20Chef." target="_blank" class="btn btn-whatsapp">
+          💬 Contatta via WhatsApp
+        </a>
+        <a href="mailto:alessioterruso@gmail.com" class="btn btn-primary">
+          ✉️ Invia un'Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Alessio Terruso. Tutti i diritti riservati. | Confidentiality Guaranteed</p>
+    </div>
+  </footer>
+
+</body>
+</html>
