@@ -252,3 +252,25 @@ footer {
 .margin-top {
   margin-top: 30px;
 }
+
+/* TESTIMONIALS STYLING */
+.quote {
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.quote-author strong {
+  display: block;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.quote-author span {
+  font-size: 0.85rem;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
