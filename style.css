@@ -232,3 +232,21 @@ footer {
 .btn-whatsapp:hover {
   background: #20ba5a;
 }
+/* TESTI ESTESI & SPAGINAZIONE */
+.about-description p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.section-intro {
+  max-width: 700px;
+  margin-top: 10px;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.margin-top {
+  margin-top: 30px;
+}
