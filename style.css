@@ -194,3 +194,57 @@ a {
     height: 280px;
   }
 }
+
+/* ==========================================================================
+   NAVIGATION BAR & HEADER STYLING
+   ========================================================================== */
+header {
+  background-color: var(--bg-main);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Allineamento orizzontale del menu */
+nav ul {
+  display: flex;
+  list-style: none; /* Rimuove i pallini dell'elenco */
+  gap: 28px;        /* Spaziatura tra i bottoni */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent-gold);
+}
+
+/* Responsiveness per dispositivi mobili */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
