@@ -143,3 +143,11 @@ footer {
   color: var(--text-muted);
   border-top: 1px solid var(--border-color);
 }
+/* LANGUAGE SWITCHER BUTTON */
+.lang-switch {
+  border: 1px solid var(--accent-gold);
+  padding: 4px 10px;
+  border-radius: 2px;
+  color: var(--accent-gold) !important;
+  font-weight: 600;
+}
