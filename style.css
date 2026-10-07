@@ -151,3 +151,84 @@ footer {
   color: var(--accent-gold) !important;
   font-weight: 600;
 }
+/* PRIVACY BADGE */
+.privacy-badge {
+  margin-top: 35px;
+  padding: 20px 25px;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-gold);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.privacy-badge p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.privacy-icon {
+  font-size: 1.5rem;
+}
+
+/* GALLERIA FOTO */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: rgba(10, 10, 10, 0.85);
+  color: var(--accent-gold);
+  font-family: var(--font-title);
+  font-size: 0.85rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* TASTI CONTATTO & WHATSAPP */
+.contact-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: #000;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-whatsapp:hover {
+  background: #20ba5a;
+}
