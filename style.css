@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MAT — MASON BY ALESSIO TERRUSO | QUIET LUXURY STYLESHEET
+   MAT — MASON BY ALESSIO TERRUSO | QUIET LUXURY STYLESHEET (PERFETTO)
    ========================================================================== */
 
 /* 1. VARIABLES & RESET */
@@ -11,7 +11,7 @@
   --text-secondary: #a0a0ab;
   --accent-gold: #c5a059;
   --accent-gold-hover: #d4af37;
-  --border-color: rgba(197, 160, 89, 0.2);
+  --border-color: rgba(197, 160, 89, 0.25);
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --max-width: 1100px;
 }
@@ -32,30 +32,147 @@ html {
 
 body {
   overflow-x: hidden;
-}
-
-/* 2. TYPOGRAPHY & UTILITIES */
-h1, h2, h3, h4 {
+  background-color: var(--bg-main);
   color: var(--text-primary);
+}
+
+/* 2. NAVIGATION BAR */
+header {
+  background-color: var(--bg-main);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 20px 0;
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--accent-gold);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex !important;
+  flex-direction: row !important;
+  list-style: none !important;
+  gap: 28px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-items: center;
+}
+
+.nav-links li {
+  list-style: none !important;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-gold);
+}
+
+.lang-switch {
+  border: 1px solid var(--border-color);
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: var(--accent-gold) !important;
+}
+
+/* 3. HERO SECTION */
+.hero {
+  padding: 120px 24px 80px;
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  display: block;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  margin-bottom: 16px;
   font-weight: 600;
-  letter-spacing: -0.02em;
 }
 
-h2 {
-  font-size: 2.2rem;
-  margin-bottom: 12px;
+.hero h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--text-primary);
 }
 
-p {
+.hero p {
+  font-size: 1.15rem;
+  margin-bottom: 32px;
   color: var(--text-secondary);
 }
 
-a {
-  color: inherit;
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* 4. BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
+.btn-primary {
+  background-color: var(--accent-gold);
+  color: #0a0a0c;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-gold-hover);
+}
+
+.btn-secondary {
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: #000;
+}
+
+/* 5. TYPOGRAPHY, TITLES & SECTIONS */
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -63,47 +180,84 @@ a {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 90px 0;
 }
 
 .bg-card {
   background-color: var(--bg-card);
 }
 
+.text-center {
+  text-align: center;
+}
+
+/* ETICHETTE E TITOLI IN ORO */
 .section-tag {
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.15em;
-  color: var(--accent-gold);
+  color: var(--accent-gold) !important;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
 
-.section-intro {
-  font-size: 1.1rem;
-  max-width: 650px;
-  margin-bottom: 40px;
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  color: var(--accent-gold) !important;
+  font-weight: 600;
+}
+
+h3, h4 {
+  color: var(--accent-gold) !important;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.section-intro, .lead {
+  font-size: 1.05rem;
   color: var(--text-secondary);
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+.about-description p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
 
 .margin-top {
   margin-top: 40px;
 }
 
-/* 3. LAYOUT GRIDS */
+/* 6. GRIDS & CARD ALIGNMENT */
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 32px;
+  align-items: stretch;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: stretch;
 }
 
 .card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   padding: 36px;
-  border-radius: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+  height: 100%;
 }
 
 .card:hover {
@@ -112,26 +266,53 @@ a {
   background-color: var(--bg-card-hover);
 }
 
-/* 4. GALLERY STYLING (DIMENSIONI E ALTEZZA UNIFORMI) */
+.card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* PRIVACY BADGE */
+.privacy-badge {
+  margin-top: 40px;
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: rgba(197, 160, 89, 0.05);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.privacy-badge p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.privacy-badge strong {
+  color: var(--accent-gold);
+}
+
+/* 7. GALLERY */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
 .gallery-item {
-  border-radius: 12px;
-  overflow: hidden;
   position: relative;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  background-color: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
   border: 1px solid var(--border-color);
+  background-color: var(--bg-card);
 }
 
 .gallery-item img {
   width: 100%;
-  height: 380px; /* Imponiamo un'altezza fissa ed uniforme a tutte le immagini */
-  object-fit: cover; /* Taglia e adatta l'immagine senza distorcerla */
+  height: 320px;
+  object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
 }
@@ -145,39 +326,80 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 20px;
-  background: linear-gradient(to top, rgba(10, 10, 12, 0.95), transparent);
-  color: var(--text-primary);
-  font-size: 0.95rem;
+  padding: 16px;
+  background: linear-gradient(transparent, rgba(10, 10, 12, 0.95));
+  color: var(--accent-gold);
+  font-size: 0.9rem;
   font-weight: 500;
-  letter-spacing: 0.03em;
 }
 
-/* 5. TESTIMONIALS & QUOTES (DICONO DI ME) */
+/* TESTIMONIALS */
 .quote {
   font-style: italic;
+  margin-bottom: 20px;
   color: var(--text-primary);
   font-size: 1.05rem;
-  line-height: 1.7;
-  margin-bottom: 24px;
-  position: relative;
+  line-height: 1.6;
 }
 
 .quote-author strong {
   display: block;
-  color: var(--text-primary);
+  color: var(--accent-gold);
   font-size: 0.95rem;
 }
 
 .quote-author span {
   font-size: 0.8rem;
-  color: var(--accent-gold);
+  color: var(--text-secondary);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
 }
 
-/* 6. RESPONSIVE DESIGN */
+/* CONTACT & FOOTER */
+.contact-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  background-color: var(--bg-main);
+}
+
+/* 8. RESPONSIVE DESIGN (TABLET & MOBILE) */
+@media (max-width: 992px) {
+  .grid-2, .grid-3, .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px !important;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .grid-2, .grid-3, .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
   .section {
     padding: 60px 0;
   }
@@ -189,53 +411,4 @@ a {
   .card {
     padding: 24px;
   }
-
-  .gallery-item img {
-    height: 280px;
-  }
-}
-
-/* ==========================================================================
-   NAVIGATION BAR & HEADER STYLING (FORZATO)
-   ========================================================================== */
-header, nav {
-  background-color: var(--bg-main);
-  padding: 15px 0;
-}
-
-/* Rimuove i pallini e dispone la lista in orizzontale */
-header ul, nav ul {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
-  align-items: center !important;
-  list-style: none !important;
-  list-style-type: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  gap: 24px !important;
-}
-
-/* Rimuove i pallini dai singoli elementi li */
-header li, nav li {
-  list-style: none !important;
-  display: inline-block !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* Stile per i link dei bottoni */
-header a, nav a {
-  color: var(--text-secondary) !important;
-  font-size: 0.9rem !important;
-  font-weight: 500 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.08em !important;
-  text-decoration: none !important;
-  transition: color 0.3s ease !important;
-}
-
-header a:hover, nav a:hover {
-  color: var(--accent-gold) !important;
 }
