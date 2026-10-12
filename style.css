@@ -79,12 +79,14 @@ header {
 }
 
 nav {
-  max-width: 1100px;
+ nav {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
 }
 
 .logo {
@@ -96,9 +98,11 @@ nav {
 }
 
 .logo-sub {
-  font-size: 0.75em;
+  font-size: 0.7em;
   color: var(--text-secondary);
   font-weight: 300;
+  letter-spacing: 1px;
+  margin-right: 25px;
 }
 
 .nav-links {
@@ -106,6 +110,7 @@ nav {
   display: flex;
   gap: 22px;
   margin: 0;
+  margin-left: auto;
   padding: 0;
   align-items: center;
 }
