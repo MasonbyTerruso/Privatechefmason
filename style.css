@@ -393,3 +393,65 @@ nav {
   bottom: 0;
   left: 0;
   right: 0;
+/* --- SEZIONE CONTATTI E PULSANTI CTA --- */
+#contact {
+  padding: 90px 20px;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.contact-actions .btn {
+  padding: 14px 30px;
+  font-size: 0.9em;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  min-width: 220px;
+}
+
+.btn-whatsapp {
+  background-color: #25d366 !important;
+  color: #ffffff !important;
+  border: 1px solid #25d366;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+}
+
+.btn-whatsapp:hover {
+  background-color: #20ba5a !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+}
+
+.contact-actions .btn-primary {
+  background-color: var(--accent-gold);
+  color: #0a0a0c !important;
+  border: 1px solid var(--accent-gold);
+}
+
+.contact-actions .btn-primary:hover {
+  background-color: #b38f48;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .contact-actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact-actions .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
