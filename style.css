@@ -205,3 +205,100 @@ nav {
     grid-template-columns: 1fr;
   }
 }
+/* --- CENE PRIVATE & MENU --- */
+.service-included-box {
+  background: rgba(212, 175, 55, 0.05);
+  border: 1px dashed var(--border-gold);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 25px auto 40px auto;
+  max-width: 800px;
+}
+
+.service-included-box h4 {
+  color: var(--accent-gold);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.menu-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 340px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-card h3 {
+  color: var(--accent-gold);
+  font-size: 1.25em;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border-gold);
+  padding-bottom: 10px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.95em;
+}
+
+.menu-list li {
+  margin-bottom: 10px;
+}
+
+.menu-card-custom {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.gold-text {
+  color: var(--accent-gold);
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Footer Links */
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-gold);
+}
