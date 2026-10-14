@@ -661,3 +661,64 @@ nav {
     margin: 0 !important;
   }
 }
+/* ==========================================================================
+   OTTIMIZZAZIONE LEGGIBILITÀ E COLONNE DI TESTO SU MOBILE
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+  /* Riduzione larghezza massima per contenitori e paragrafi */
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    max-width: 100% !important;
+  }
+
+  /* Evita che i testi occupino l'intera larghezza dello schermo */
+  p, .section-intro, .hero p, .about-content p {
+    max-width: 520px !important; /* Limita la lunghezza della riga */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 0.95rem !important; /* Dimensione ideale per lettura mobile */
+    line-height: 1.65 !important;  /* Maggiore respiro tra le righe */
+    letter-spacing: 0.2px !important;
+    text-align: left !important;   /* Garantisce massima fluidità di lettura */
+  }
+
+  /* Introduzioni di sezione centrate ma compatte */
+  .section-intro {
+    text-align: center !important;
+    max-width: 460px !important;
+    margin-bottom: 30px !important;
+    color: #cfcfd4 !important;
+  }
+
+  /* Spaziatura elegante tra i singoli paragrafi */
+  p + p {
+    margin-top: 16px !important;
+  }
+
+  /* Riquadri delle carte più compatti e ariosi */
+  .card p, .service-included-box p {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Titoli proporzionati per evitare a capo sgradevoli */
+  h1 {
+    font-size: 2em !important;
+    line-height: 1.2 !important;
+    max-width: 480px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  h2 {
+    font-size: 1.65em !important;
+    line-height: 1.25 !important;
+    max-width: 480px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
