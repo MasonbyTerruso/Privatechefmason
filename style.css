@@ -456,159 +456,208 @@ nav {
   }
 }
 /* ==========================================================================
-   OTTIMIZZAZIONE MOBILE & SMARTPHONE (QUIET LUXURY RESPONSIVE)
+   DESIGN MOBILE REVOLUTION — QUIET LUXURY (SMARTPHONE OPTIMIZED)
    ========================================================================== */
 
 @media (max-width: 768px) {
   
-  /* Layout Base & Padding Sezioni */
-  body {
-    font-size: 15px;
-    line-height: 1.6;
+  /* --- BASE & TIPOGRAFIA --- */
+  html, body {
+    overflow-x: hidden;
+    font-size: 14.5px;
   }
 
   .section {
-    padding: 55px 18px;
+    padding: 48px 18px !important;
   }
 
-  /* Header e Navigazione */
+  .section-tag {
+    font-size: 0.72em !important;
+    letter-spacing: 2.5px !important;
+  }
+
+  .section h2 {
+    font-size: 1.85em !important;
+    line-height: 1.25 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .section-intro {
+    font-size: 0.95em !important;
+    line-height: 1.55 !important;
+    margin-bottom: 28px !important;
+  }
+
+  /* --- HEADER & NAVIGATION (PULITO ED ELEGANTE) --- */
   header {
-    padding: 12px 0;
+    padding: 10px 0 !important;
   }
 
   nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 0 12px !important;
   }
 
   .logo {
-    font-size: 1em;
+    font-size: 1.05em !important;
+    letter-spacing: 1.2px !important;
     text-align: center;
+  }
+
+  .logo-sub {
+    display: block;
+    font-size: 0.75em;
+    margin-top: 2px;
   }
 
   .nav-links {
-    gap: 12px;
-    justify-content: center;
-    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+    padding: 6px 0 !important;
+    border-top: 1px solid rgba(197, 160, 89, 0.15);
   }
 
   .nav-links a {
-    font-size: 0.72em;
-    letter-spacing: 0.8px;
-    padding: 4px 6px;
+    font-size: 0.7em !important;
+    letter-spacing: 0.8px !important;
+    padding: 4px 6px !important;
   }
 
-  .lang-switch {
-    padding: 3px 10px !important;
-  }
-
-  /* Hero Section Mobile */
+  /* --- HERO SECTION MOBILE --- */
   .hero {
-    padding: 60px 16px 45px;
+    padding: 50px 18px 40px !important;
+  }
+
+  .subtitle {
+    font-size: 0.72em !important;
+    letter-spacing: 2.5px !important;
   }
 
   .hero h1 {
-    font-size: 2em;
-    line-height: 1.25;
-    margin-bottom: 14px;
+    font-size: 2.1em !important;
+    line-height: 1.2 !important;
+    margin-bottom: 16px !important;
   }
 
   .hero p {
-    font-size: 0.98em;
-    margin-bottom: 25px;
+    font-size: 0.98em !important;
+    line-height: 1.6 !important;
+    margin-bottom: 25px !important;
   }
 
   .hero-actions {
-    flex-direction: column;
-    width: 100%;
-    gap: 12px;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 12px !important;
   }
 
   .hero-actions .btn {
-    width: 100%;
-    text-align: center;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 14px 20px !important;
   }
 
-  /* Sezione Chi Sono (About) */
+  /* --- CHI SONO (ABOUT) --- */
   .about-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .about-image-wrapper {
+    border-radius: 12px !important;
   }
 
   .about-img {
-    max-height: 380px;
-    border-radius: 6px;
+    max-height: 360px !important;
+    object-fit: cover !important;
   }
 
   .about-content h2 {
-    font-size: 1.7em;
+    font-size: 1.7em !important;
   }
 
   .about-highlights {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    padding-top: 16px !important;
   }
 
-  /* Griglie, Carte e Portfolio */
+  /* --- SCHEDE & CARDS MOBILE (GRIGLIA ADATTIVA) --- */
   .grid-2, .grid-3, .gallery-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
   }
 
   .card {
-    padding: 24px 20px;
+    padding: 22px 18px !important;
+    border-radius: 10px !important;
+    background: #111115 !important;
   }
 
   .card h3, .card h4 {
-    font-size: 1.18em;
+    font-size: 1.2em !important;
   }
 
+  /* --- PORTFOLIO GALLERY MOBILE --- */
   .gallery-item {
-    min-height: 220px;
+    border-radius: 10px !important;
+    min-height: 220px !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+
+  .gallery-item img {
+    width: 100% !important;
+    height: 230px !important;
+    object-fit: cover !important;
   }
 
   .gallery-caption {
-    font-size: 0.9em;
-    padding: 12px;
+    font-size: 0.85em !important;
+    padding: 12px 15px !important;
+    background: linear-gradient(0deg, rgba(10,10,12,0.95) 0%, transparent 100%) !important;
   }
 
-  /* Sezione Cene Private & Menu */
-  .service-included-box {
-    padding: 18px;
-    margin: 20px 0 25px;
+  /* --- SEZIONE CONTATTI MOBILE --- */
+  #contact {
+    padding: 55px 18px !important;
   }
 
-  .menu-grid {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .menu-card {
-    max-width: 100%;
-  }
-
-  /* Pulsanti e Sezione Contatti */
   .contact-actions {
-    flex-direction: column;
-    width: 100%;
-    gap: 12px;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 14px !important;
+    margin-top: 25px !important;
   }
 
   .contact-actions .btn {
-    width: 100%;
-    justify-content: center;
-    padding: 14px 20px;
+    width: 100% !important;
+    padding: 15px 20px !important;
+    font-size: 0.88em !important;
+    border-radius: 8px !important;
+    justify-content: center !important;
   }
 
-  /* Footer */
+  /* --- FOOTER MOBILE --- */
   footer {
-    padding: 35px 16px;
-    text-align: center;
+    padding: 35px 18px 45px !important;
+    text-align: center !important;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
   }
 
   .footer-links a {
-    display: inline-block;
-    margin: 6px 8px;
+    font-size: 0.78em !important;
+    margin: 0 !important;
   }
 }
