@@ -793,4 +793,59 @@ nav {
     width: 100%;
     height: auto;
   }
+}/* ==========================================
+   OTTIMIZZAZIONE AVANZATA PER SMARTPHONE
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+
+  /* Layout Sezioni e Contenitori */
+  .section, .hero {
+    padding: 45px 18px !important;
+  }
+
+  /* Ridimensionamento Titoli Hero e Sezioni */
+  .hero h1 {
+    font-size: 26px !important;
+    line-height: 1.25 !important;
+  }
+
+  .hero p, .section-intro {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+  }
+
+  /* Griglie a colonna singola per schede e gallery */
+  .grid-2, .grid-3, .about-grid, .gallery-grid, .menu-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  /* Pulsanti full-width touch friendly */
+  .btn, .btn-primary, .btn-secondary, .btn-whatsapp {
+    display: block !important;
+    width: 100% !important;
+    padding: 15px 20px !important;
+    font-size: 15px !important;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 10px !important;
+  }
+
+  .hero-actions, .contact-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Immagini responsive */
+  .about-image-wrapper img, .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
 }
