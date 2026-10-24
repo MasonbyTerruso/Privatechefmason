@@ -721,4 +721,76 @@ nav {
     margin-left: auto !important;
     margin-right: auto !important;
   }
+}/* ==========================================
+   OPTIMIZATION FOR SMARTPHONE & MOBILE DEVICES
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+
+  /* 1. Header e Navigazione */
+  header nav {
+    flex-direction: column;
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+    padding: 0;
+  }
+
+  .nav-links li a {
+    font-size: 13px;
+  }
+
+  /* 2. Ridimensionamento Titoli */
+  .hero h1 {
+    font-size: 28px !important;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 15px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  /* 3. Griglie a Colonna Singola */
+  .grid-2, .grid-3, .about-grid, .gallery-grid, .menu-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* 4. Padding Sezioni Ridotto per Mobile */
+  .section, .hero {
+    padding: 50px 18px !important;
+  }
+
+  /* 5. Pulsanti e Touch Targets per Pollice */
+  .btn, .btn-primary, .btn-secondary, .btn-whatsapp {
+    display: block !important;
+    width: 100% !important;
+    padding: 16px 20px !important;
+    font-size: 15px !important;
+    margin-bottom: 12px !important;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .hero-actions, .contact-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* 6. Immagini e Badge */
+  .about-image-wrapper img, .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
 }
