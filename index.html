@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0D0E11">
+  <meta name="theme-color" content="#0a0a0c">
 
   <!-- SEO & Titolo Ufficiale -->
   <title>MAT — Alta Cucina Privata, Performance Nutrition, Corsi & Consulenze | Alessio Terruso</title>
@@ -34,13 +34,24 @@
 
   <!-- Favicon e Foglio di Stile -->
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="style.css?v=3.3">
   <style>
-    html{scroll-behavior:smooth;scroll-padding-top:90px}
-    .skip-link{position:absolute;left:-9999px;top:0;background:#D4AF37;color:#0D0E11;padding:10px 16px;z-index:1000;font-weight:600}
+    html{scroll-padding-top:110px}
+    .skip-link{position:absolute;left:-9999px;top:0;background:var(--accent-gold);color:#0a0a0c;padding:10px 16px;z-index:1100;font-weight:600}
     .skip-link:focus{left:8px;top:8px}
-    a:focus-visible,.btn:focus-visible{outline:2px solid #D4AF37;outline-offset:3px}
+    a:focus-visible,.btn:focus-visible{outline:2px solid var(--accent-gold);outline-offset:3px}
+    .audit-note{color:var(--text-muted);font-size:.85em;margin-top:18px}
+    .audit-note a{color:var(--accent-gold)}
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media (max-width:768px){
+      .nav-links{flex-wrap:nowrap!important;justify-content:flex-start!important;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:4px!important;padding:6px 4px!important}
+      .nav-links::-webkit-scrollbar{display:none}
+      .nav-links li{flex:0 0 auto}
+      .nav-links a{font-size:.75rem!important;padding:9px 10px!important}
+    }
   </style>
 
   <!-- Dati strutturati (Google) -->
@@ -259,7 +270,7 @@
       <div class="margin-top">
         <a href="https://mason-audit.vercel.app" class="btn btn-primary" target="_blank" rel="noopener">Fai l'audit gratuito</a>
       </div>
-      <p class="section-intro" style="margin-top:16px;font-size:.85em">Per attivare l'accesso raccogliamo nome del locale, città, P.IVA ed email: vedi la <a href="privacy.html">Privacy Policy</a>.</p>
+      <p class="audit-note">Per attivare l'accesso raccogliamo nome del locale, città, P.IVA ed email: vedi la <a href="privacy.html">Privacy Policy</a>.</p>
     </div>
   </section>
 
