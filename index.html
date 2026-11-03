@@ -3,20 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta name="theme-color" content="#0D0E11">
+
   <!-- SEO & Titolo Ufficiale -->
   <title>MAT — Alta Cucina Privata, Performance Nutrition, Corsi & Consulenze | Alessio Terruso</title>
   <meta name="description" content="Chef privato, nutrizione di precisione per atleti, corsi di cucina su misura (Masterclass, Wine Pairing & Menu Design) e consulenze B2B per la ristorazione d'eccellenza.">
   <meta name="keywords" content="Chef Privato Torino, Private Chef Italia, Corsi di Cucina Torino, Masterclass Cucina, Pasta Fresca, Wine Pairing, Sommelier, Creazione Menu Gourmet, Performance Nutrition, Consulenze Ristorative, Alessio Terruso">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://masonterruso.com/">
+  <link rel="alternate" hreflang="it" href="https://masonterruso.com/">
+  <link rel="alternate" hreflang="en" href="https://masonterruso.com/en.html">
+  <link rel="alternate" hreflang="x-default" href="https://masonterruso.com/">
 
   <!-- Open Graph / WhatsApp / Social Preview -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MASON by Alessio Terruso">
+  <meta property="og:locale" content="it_IT">
   <meta property="og:url" content="https://masonterruso.com/">
   <meta property="og:title" content="MAT — Mason by Alessio Terruso | Private Chef, Workshops & Advisory">
   <meta property="og:description" content="Servizi culinari su misura per cene private d'élite, nutrizione per atleti professionisti, corsi di cucina privati e consulenze per la ristorazione.">
   <meta property="og:image" content="https://masonterruso.com/alessio-terruso.webp">
+  <meta property="og:image:alt" content="Alessio Terruso — Executive & Performance Private Chef">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -27,13 +34,33 @@
 
   <!-- Favicon e Foglio di Stile -->
   <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="style.css?v=3.2">
+  <link rel="stylesheet" href="style.css?v=3.3">
+  <style>
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    .skip-link{position:absolute;left:-9999px;top:0;background:#D4AF37;color:#0D0E11;padding:10px 16px;z-index:1000;font-weight:600}
+    .skip-link:focus{left:8px;top:8px}
+    a:focus-visible,.btn:focus-visible{outline:2px solid #D4AF37;outline-offset:3px}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+
+  <!-- Dati strutturati (Google) -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"ProfessionalService","name":"MASON by Alessio Terruso","alternateName":"MAT","url":"https://masonterruso.com/","image":"https://masonterruso.com/alessio-terruso.webp","description":"Chef privato, nutrizione per la performance, corsi di cucina su misura e consulenze B2B per la ristorazione.","telephone":"+393519503238","email":"masonterruso@gmail.com","areaServed":["Torino","Milano","Costa Azzurra","Monaco"],"founder":{"@type":"Person","name":"Alessio Terruso","jobTitle":"Executive & Performance Private Chef"},"knowsAbout":["Private Chef","Performance Nutrition","Menu Engineering","Food Cost Control","HACCP","Wine Pairing"]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Dove operi e quali aree copri?","acceptedAnswer":{"@type":"Answer","text":"Opero principalmente tra Torino, Milano, la Costa Azzurra e Monaco. Sono inoltre disponibile per trasferte nazionali e internazionali, villa/yacht private chef tenure ed eventi riservati worldwide."}},
+  {"@type":"Question","name":"Con quanto anticipo occorre prenotare?","acceptedAnswer":{"@type":"Answer","text":"Per cene private ed eventi riservati è consigliabile richiedere la disponibilità con 7-14 giorni di anticipo. Per corsi su misura, stagioni da Performance Chef e consulenze B2B la pianificazione avviene con accordi dedicati."}},
+  {"@type":"Question","name":"Come gestisci intolleranze, regimi speciali e privacy?","acceptedAnswer":{"@type":"Answer","text":"Ogni menù, corso o piano nutrizionale viene bilanciato su misura in base a requisiti medici, regimi atletici, allergie o preferenze etiche. La massima riservatezza e la firma di NDA sono sempre garantite."}},
+  {"@type":"Question","name":"Cosa include il servizio Private Chef a domicilio?","acceptedAnswer":{"@type":"Answer","text":"Ricerca e selezione di materie prime d'eccellenza, preparazione espressa nella vostra cucina, servizio al tavolo, riordino e pulizia completa della postazione di lavoro."}}]}
+  </script>
 </head>
 <body>
+  <a href="#main" class="skip-link">Vai al contenuto</a>
 
   <!-- NAVIGATION -->
   <header>
-    <nav>
+    <nav aria-label="Navigazione principale">
       <a href="#" class="logo">MAT <span class="logo-sub">— Mason by Alessio Terruso</span></a>
       <ul class="nav-links">
         <li><a href="#about">Chi Sono</a></li>
@@ -41,14 +68,17 @@
         <li><a href="#performance">Performance Nutrition</a></li>
         <li><a href="#corsi">Corsi di Cucina</a></li>
         <li><a href="#consulenze">Consulenze B2B</a></li>
+        <li><a href="#audit">Audit Gratuito</a></li>
         <li><a href="#cene-private">Cene Private</a></li>
         <li><a href="#gallery">Portfolio</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contatti</a></li>
-        <li><a href="en.html" class="lang-switch">EN</a></li>
+        <li><a href="en.html" class="lang-switch" hreflang="en" lang="en">EN</a></li>
       </ul>
     </nav>
   </header>
+
+  <main id="main">
 
   <!-- HERO SECTION -->
   <section class="hero">
@@ -67,13 +97,10 @@
   <section id="about" class="section">
     <div class="container">
       <div class="about-grid">
-        <!-- Colonna Immagine Top Quality -->
         <div class="about-image-wrapper">
-          <img src="alessio-terruso.webp" alt="Alessio Terruso — Executive & Performance Private Chef" class="about-img" loading="lazy">
+          <img src="alessio-terruso.webp" alt="Alessio Terruso — Executive & Performance Private Chef" class="about-img" loading="lazy" decoding="async">
           <div class="about-img-badge">Alessio Terruso | MASON</div>
         </div>
-
-        <!-- Colonna Testo descrittivo -->
         <div class="about-content">
           <span class="section-tag">Chi Sono & Filosofia</span>
           <h2>Mastery, Discretion & High Performance</h2>
@@ -81,18 +108,9 @@
           <p>Ogni intervento è un'esperienza sartoriale riservata, studiata per coniugare l'impatto sensoriale del Fine Dining con le tecniche e la disciplina più elevate.</p>
           <p>Operiamo con la massima garanzia di riservatezza e con firma di NDA a tutela della privacy dei nostri clienti.</p>
           <div class="about-highlights">
-            <div class="highlight-item">
-              <strong>Alta Cucina Privata</strong>
-              <span>Esperienze gastronomiche su misura in residenze esclusive.</span>
-            </div>
-            <div class="highlight-item">
-              <strong>Performance Nutrition</strong>
-              <span>Piani nutrizionali avanzati per atleti professionisti e VIP.</span>
-            </div>
-            <div class="highlight-item">
-              <strong>Private Workshops & Advisory</strong>
-              <span>Corsi individuali/gruppo, menu engineering e formazione B2B.</span>
-            </div>
+            <div class="highlight-item"><strong>Alta Cucina Privata</strong><span>Esperienze gastronomiche su misura in residenze esclusive.</span></div>
+            <div class="highlight-item"><strong>Performance Nutrition</strong><span>Piani nutrizionali avanzati per atleti professionisti e VIP.</span></div>
+            <div class="highlight-item"><strong>Private Workshops & Advisory</strong><span>Corsi individuali/gruppo, menu engineering e formazione B2B.</span></div>
           </div>
         </div>
       </div>
@@ -105,7 +123,6 @@
       <span class="section-tag">ESPERIENZE SARTORIALI</span>
       <h2>Servizi Culinari su Misura</h2>
       <p class="section-intro">Soluzioni gastronomiche flessibili e altamente personalizzate, ideate per soddisfare le esigenze di una clientela esigente sia a domicilio che in viaggio.</p>
-      
       <div class="grid-2 margin-top">
         <div class="card">
           <h3>Cene Private & Intime di Coppia</h3>
@@ -137,7 +154,6 @@
       <span class="section-tag">ATLETI PROFESSIONISTI</span>
       <h2>High-Performance Culinary Management</h2>
       <p class="section-intro">Supporto nutrizionale e culinario avanzato per atleti di alto livello, progettato per ottimizzare il recupero muscolare, l'energia in gara e le prestazioni complessive.</p>
-
       <div class="grid-3 margin-top">
         <div class="card">
           <h4>Nutrizione per la Performance</h4>
@@ -164,13 +180,10 @@
       <span class="section-tag">PRIVATE WORKSHOPS & MASTERCLASS</span>
       <h2>Corsi di Cucina & Masterclass Esclusive</h2>
       <p class="section-intro">Lezioni di cucina personalizzate One-to-One o per piccoli gruppi (da 2 a 8 partecipanti), organizzate direttamente nella tua residenza o in location selezionate a Torino, Milano e Costa Azzurra.</p>
-
-      <!-- Box Formati Lezioni -->
       <div class="service-included-box" style="margin-bottom: 40px;">
         <h4>Format & Modalità d'Insegnamento</h4>
         <p>Sessioni Individuali One-to-One • Masterclass private per piccoli gruppi • Team Building aziendali & Gift Experience • Argomenti e ricette interamente personalizzabili su richiesta</p>
       </div>
-
       <div class="grid-2 margin-top">
         <div class="card">
           <h3>Tradizione Italiana & Pasta Fresca Artigianale</h3>
@@ -193,11 +206,8 @@
           <p>Dalla concezione dell'idea iniziale alla costruzione della scheda ricetta e gestione dei tempi di servizio.</p>
         </div>
       </div>
-
       <div class="margin-top text-center">
-        <a href="https://wa.me/393519503238?text=Buongiorno%20Alessio,%20vorrei%20informazioni%20sui%20tuoi%20corsi%20di%20cucina%20privati." class="btn btn-primary" target="_blank">
-          Richiedi Info o Regala un Corso
-        </a>
+        <a href="https://wa.me/393519503238?text=Buongiorno%20Alessio,%20vorrei%20informazioni%20sui%20tuoi%20corsi%20di%20cucina%20privati." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Richiedi Info o Regala un Corso</a>
       </div>
     </div>
   </section>
@@ -208,7 +218,6 @@
       <span class="section-tag">B2B ADVISORY & SOLUTIONS</span>
       <h2>Consulenze Ristorative & Menu Engineering</h2>
       <p class="section-intro">Sviluppo di format gastronomici, ottimizzazione dei margini e alta formazione per la ristorazione d'eccellenza, boutique hotel e strutture ricettive a Torino, Milano e Costa Azzurra.</p>
-
       <div class="grid-2 margin-top">
         <div class="card">
           <h3>Start-Up & Ideazione Format</h3>
@@ -231,55 +240,58 @@
           <p>Revisione e valorizzazione dell'offerta culinaria per colazioni gourmet, banqueting privato o carte degustazione ad alto valore aggiunto.</p>
         </div>
       </div>
-
       <div class="margin-top text-center">
-        <a href="https://wa.me/393519503238?text=Buongiorno%20Alessio,%20vorrei%20informazioni%20sulle%20consulenze%20ristorative%20B2B." class="btn btn-primary" target="_blank">
-          Richiedi una Consulenza Ristorativa
-        </a>
+        <a href="https://wa.me/393519503238?text=Buongiorno%20Alessio,%20vorrei%20informazioni%20sulle%20consulenze%20ristorative%20B2B." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Richiedi una Consulenza Ristorativa</a>
       </div>
     </div>
   </section>
 
+  <!-- AUDIT GRATUITO -->
+  <section id="audit" class="section bg-card">
+    <div class="container text-center">
+      <span class="section-tag">NOVITÀ · GRATUITO</span>
+      <h2>MASON Audit 360° — l'autodiagnosi gratuita per il tuo ristorante</h2>
+      <p class="section-intro">100 parametri su food cost, cassa, personale, HACCP e marketing, con report e piano d'azione a 30, 60 e 90 giorni. Accesso gratuito, senza carta di credito: un accesso per ristorante.</p>
+      <div class="service-included-box">
+        <h4>Cosa ottieni</h4>
+        <p>Punteggio di salute aziendale • Radar delle 10 aree • Criticità prioritarie • Piano d'azione 30/60/90 giorni • Kit operativo con workbook Excel e checklist stampabili</p>
+      </div>
+      <div class="margin-top">
+        <a href="https://mason-audit.vercel.app" class="btn btn-primary" target="_blank" rel="noopener">Fai l'audit gratuito</a>
+      </div>
+      <p class="section-intro" style="margin-top:16px;font-size:.85em">Per attivare l'accesso raccogliamo nome del locale, città, P.IVA ed email: vedi la <a href="privacy.html">Privacy Policy</a>.</p>
+    </div>
+  </section>
+
   <!-- TESTIMONIALS & NDA SECTION -->
-  <section id="testimonials" class="section bg-card">
+  <section id="testimonials" class="section">
     <div class="container">
       <span class="section-tag">DICONO DI ME</span>
       <h2>Riferimenti & Riservatezza</h2>
       <p class="section-intro">La fiducia di atleti d'élite e clienti privati si fonda sulla costanza qualitativa e sul massimo rispetto della vita privata.</p>
-      
       <div class="grid-2 margin-top">
         <div class="card">
           <p class="quote">"Professionalità e cura maniacale dei dettagli nutrizionali. Aver curato la mia alimentazione quotidiana e nei giorni di gara ha fatto la differenza nelle prestazioni sul campo."</p>
-          <div class="quote-author">
-            <strong>Calciatore Professionista</strong><br>
-            <span style="color: #a0a0a0; font-size: 0.85em;">Atleta di Livello Internazionale</span>
-          </div>
+          <div class="quote-author"><strong>Calciatore Professionista</strong><br><span style="color: #a0a0a0; font-size: 0.85em;">Atleta di Livello Internazionale</span></div>
         </div>
         <div class="card">
           <p class="quote">"Un'esperienza culinaria d'eccellenza direttamente nella nostra residenza. Gestione impeccabile dell'evento, discrezione totale e una qualità dei piatti da ristorante stellato."</p>
-          <div class="quote-author">
-            <strong>Family Office / Private Client</strong><br>
-            <span style="color: #a0a0a0; font-size: 0.85em;">Residenza Privata, Monaco</span>
-          </div>
+          <div class="quote-author"><strong>Family Office / Private Client</strong><br><span style="color: #a0a0a0; font-size: 0.85em;">Residenza Privata, Monaco</span></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CENE PRIVATE SECTION -->
-  <section id="cene-private" class="section">
+  <section id="cene-private" class="section bg-card">
     <div class="container text-center">
       <span class="section-tag">MENU DEGUSTAZIONE</span>
-      <h2>Cene Private & Esperienze Culinari</h2>
+      <h2>Cene Private & Esperienze Culinarie</h2>
       <p class="section-intro">Questi menu sono esempi di degustazione: ogni proposta può essere interamente personalizzata e creata su misura per soddisfare i tuoi gusti e le tue esigenze.</p>
-
-      <!-- Box Servizi Inclusi -->
       <div class="service-included-box">
         <h4>Il Servizio Include</h4>
         <p>Selezione e spesa di materie prime d'eccellenza • Servizio al tavolo • Pulizia e riordino completo della cucina • Storytelling dei piatti • Sommelier di vini dedicato</p>
       </div>
-
-      <!-- Griglia Menu -->
       <div class="menu-grid margin-top">
         <div class="card menu-card">
           <h3>Menu Stagionale</h3>
@@ -289,7 +301,6 @@
             <li><strong>Dolce:</strong> Tiramisù alla vecchia maniera.</li>
           </ul>
         </div>
-
         <div class="card menu-card">
           <h3>Menu dello Chef</h3>
           <ul class="menu-list">
@@ -298,36 +309,31 @@
             <li><strong>Dolce:</strong> Panna cotta ai frutti di bosco.</li>
           </ul>
         </div>
-
         <div class="card menu-card menu-card-custom">
           <h3>Menu Personalizzato</h3>
           <p>Desideri un percorso degustazione unico o hai esigenze alimentari specifiche?</p>
           <p class="gold-text">Contattami per creare insieme il tuo menu ideale.</p>
         </div>
       </div>
-
       <div class="margin-top">
-        <a href="https://wa.me/393519503238?text=Buongiorno%20Alessio,%20vorrei%20informazioni%20per%20organizzare%20una%20cena%20privata." class="btn btn-primary" target="_blank">
-          Prenota o Personalizza la tua Cena
-        </a>
+        <a href="https://wa.me/393519503238?text=Buongiorno%20Alessio,%20vorrei%20informazioni%20per%20organizzare%20una%20cena%20privata." class="btn btn-primary" target="_blank" rel="noopener noreferrer">Prenota o Personalizza la tua Cena</a>
       </div>
     </div>
   </section>
 
   <!-- GALLERY SECTION -->
-  <section id="gallery" class="section bg-card">
+  <section id="gallery" class="section">
     <div class="container">
       <span class="section-tag">PORTFOLIO</span>
       <h2>Estetica Culinaria & Materia Prima</h2>
       <p class="section-intro">Una selezione visiva della mia filosofia culinaria: la purezza degli ingredienti freschi, l'armonia degli impiantamenti e la cura dei dettagli.</p>
-      
       <div class="gallery-grid margin-top">
         <div class="gallery-item">
-          <img src="foto%20piatto%20sitoweb.webp" alt="Piatto Degustazione Gourmet — High-Performance Fine Dining" loading="lazy">
+          <img src="foto%20piatto%20sitoweb.webp" alt="Piatto Degustazione Gourmet — High-Performance Fine Dining" loading="lazy" decoding="async">
           <div class="gallery-caption">High-Performance Fine Dining</div>
         </div>
         <div class="gallery-item">
-          <img src="materie%20prime%20sitoweb.webp" alt="Materie Prime e Ingredienti Freschi d'Eccellenza" loading="lazy">
+          <img src="materie%20prime%20sitoweb.webp" alt="Materie Prime e Ingredienti Freschi d'Eccellenza" loading="lazy" decoding="async">
           <div class="gallery-caption">Ortaggi & Materie Prime Selezionate</div>
         </div>
       </div>
@@ -335,31 +341,27 @@
   </section>
 
   <!-- FAQ SECTION -->
-  <section id="faq" class="section">
+  <section id="faq" class="section bg-card">
     <div class="container">
       <span class="section-tag">INFO PRATICHE</span>
       <h2>Domande Frequenti & Operatività</h2>
       <p class="section-intro">Tutto ciò che c'è da sapere prima di prenotare un servizio privato, un workshop o una consulenza d'élite.</p>
-      
       <div class="grid-2 margin-top">
         <div class="card">
           <h3>Dove operi e quali aree copri?</h3>
           <p>Opero principalmente tra Torino, Milano, la Costa Azzurra e Monaco.</p>
           <p>Sono inoltre disponibile per trasferte nazionali e internazionali, villa/yacht private chef tenure ed eventi riservati worldwide.</p>
         </div>
-        
         <div class="card">
           <h3>Con quanto anticipo occorre prenotare?</h3>
           <p>Per cene private ed eventi riservati è consigliabile richiedere la disponibilità con 7-14 giorni di anticipo.</p>
           <p>Per i corsi di cucina su misura, le stagioni da Performance Chef e le consulenze B2B, la pianificazione avviene con accordi dedicati.</p>
         </div>
-
         <div class="card">
           <h3>Come gestisci intolleranze, regimi speciali e privacy?</h3>
           <p>Ogni menù, corso o piano nutrizionale viene bilanciato su misura in base a requisiti medici, regimi atletici specifici, allergie o preferenze etiche.</p>
           <p>La massima riservatezza e la firma di NDA sono sempre garantite.</p>
         </div>
-
         <div class="card">
           <h3>Cosa include il servizio Private Chef a domicilio?</h3>
           <p>Il servizio include la ricerca e selezione di materie prime d'eccellenza, la preparazione espressa nella vostra cucina, il servizio al tavolo, il riordino e la pulizia completa della postazione di lavoro.</p>
@@ -367,32 +369,29 @@
       </div>
     </div>
   </section>
-  
+
   <!-- CONTACT SECTION -->
-  <section id="contact" class="section text-center bg-card">
+  <section id="contact" class="section text-center">
     <div class="container">
       <span class="section-tag">CONTATTI</span>
       <h2>Richiedi una Consultazione Riservata</h2>
       <p class="section-intro">Disponibile per incarichi privati, corsi personalizzati, consulenze B2B e collaborazioni sportive a Torino, Milano e Costa Azzurra.</p>
-      
       <div class="contact-actions margin-top">
-        <a href="https://wa.me/393519503238?text=Buongiorno%20Alessio,%20vorrei%20informazioni%20sui%20tuoi%20servizi." target="_blank" class="btn btn-whatsapp">
-          💬 Contatta via WhatsApp
-        </a>
-        <a href="mailto:masonterruso@gmail.com" class="btn btn-primary">
-          ✉️ Invia un'Email
-        </a>
+        <a href="https://wa.me/393519503238?text=Buongiorno%20Alessio,%20vorrei%20informazioni%20sui%20tuoi%20servizi." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">💬 Contatta via WhatsApp</a>
+        <a href="mailto:masonterruso@gmail.com" class="btn btn-primary">✉️ Invia un'Email</a>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer>
     <div class="container text-center">
       <p>&copy; 2026 MASON by Alessio Terruso. Tutti i diritti riservati.</p>
       <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a> | 
-        <a href="cookie.html">Cookie Policy</a> | 
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="cookie.html">Cookie Policy</a> |
         <a href="terms.html">Termini e Condizioni</a>
       </div>
     </div>
